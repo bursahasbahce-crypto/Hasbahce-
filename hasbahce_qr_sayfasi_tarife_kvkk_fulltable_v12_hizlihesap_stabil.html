@@ -1,0 +1,136 @@
+<div class="hero">
+  <div class="heroTitle">HASBAHÇE • KİRALAMA TARİFESİ</div>
+  <div class="heroSub">Güncel Ücret Tablosu • Hızlı Hesap</div>
+</div>
+<!doctype html>
+<html lang="tr">
+<head> <meta charset="utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1" /> <title>Hasbahçe • Kiralama Tarifesi & KVKK</title> <style> :root{ --red:#C8102E; --gold:#C8A44B; --text:#111; --muted:#444; --bg:#fff; --card:#f6f6f6; --line:#e6e6e6; --soft:#fbfbfb; } *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)} header{background:var(--red);color:#fff;padding:18px 16px} header h1{margin:0;font-size:20px;letter-spacing:.2px} header p{margin:6px 0 0;font-size:14px;opacity:.9} .wrap{max-width:980px;margin:0 auto;padding:14px 14px 28px} .badge{display:inline-block;background:var(--gold);color:#fff;padding:6px 10px;border-radius:10px;font-weight:800;font-size:12px;margin-top:-10px} .grid{display:grid;gap:12px} @media(min-width:980px){ .grid{grid-template-columns:1.2fr .8fr} } .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px} h2{margin:0 0 10px;font-size:16px} ul{margin:8px 0 0 18px;padding:0} li{margin:6px 0;color:var(--muted)} .note{font-size:13px;color:var(--muted);line-height:1.5} .kicker{font-size:12px;color:var(--muted)} .table-wrap{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff} table{width:100%;border-collapse:collapse} thead th{background:var(--red);color:#fff;text-align:center;padding:11px 8px;font-size:13px;white-space:nowrap} tbody td{padding:10px 8px;border-top:1px solid var(--line);text-align:center;white-space:nowrap} tbody tr:nth-child(even) td{background:var(--soft)} .sticky thead th{position:sticky;top:0;z-index:2} .scroll{max-height:420px;overflow:auto} .calc{display:grid;gap:10px} .calc-row{display:grid;grid-template-columns:1fr 1fr;gap:10px} @media(max-width:520px){ .calc-row{grid-template-columns:1fr} } input, select{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:12px;font-size:14px} .result{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px} .result b{font-size:18px} .pill{display:inline-block;background:#fff;border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted)} details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 12px} details+details{margin-top:10px} summary{cursor:pointer;font-weight:900;color:var(--text);outline:none} .kvkk{margin-top:10px;line-height:1.6;color:var(--muted);font-size:13px} .rtl{direction:rtl;text-align:right} footer{margin-top:16px;color:var(--muted);font-size:12px;text-align:center} .notice{background:#fff;border:1px solid #e6e7ea;border-radius:14px;padding:12px;margin:10px 0;font-weight:900} .pageTitle{margin:10px 0 12px;font-size:20px;font-weight:1000;letter-spacing:.4px;text-align:center;background:var(--primary,#d32f2f);color:#fff;padding:10px 12px;border-radius:14px} /* Tema bütünlüğü (kırmızı) */
+header{background:var(--primary,#d32f2f)!important}
+a, .btn, button.primary{background:var(--primary,#d32f2f)!important;border-color:var(--primary,#d32f2f)!important}
+a:hover, .btn:hover, button.primary:hover{background:var(--primaryDark,#b71c1c)!important;border-color:var(--primaryDark,#b71c1c)!important}
+.notice{border-left:6px solid var(--primary,#d32f2f)!important} 
+/* Üst başlık (premium) */
+.hero{
+  background: linear-gradient(135deg, var(--primary,#d32f2f), var(--primaryDark,#b71c1c));
+  color:#fff;
+  border-radius:18px;
+  padding:14px 14px;
+  margin:12px 0 14px;
+  box-shadow:0 10px 24px rgba(0,0,0,.14);
+  border:1px solid rgba(255,255,255,.18);
+  position:relative;
+  overflow:hidden;
+  text-align:center;
+}
+.hero:before{
+  content:"";
+  position:absolute; inset:-40px -60px auto auto;
+  width:220px; height:220px;
+  background:rgba(255,255,255,.12);
+  border-radius:999px;
+  transform:rotate(18deg);
+}
+.hero:after{
+  content:"";
+  position:absolute; inset:auto auto -60px -60px;
+  width:240px; height:240px;
+  background:rgba(0,0,0,.08);
+  border-radius:999px;
+}
+.heroTitle{
+  position:relative;
+  font-weight:1000;
+  letter-spacing:.6px;
+  font-size:20px;
+  line-height:1.15;
+}
+.heroSub{
+  position:relative;
+  margin-top:6px;
+  font-size:12px;
+  opacity:.95;
+  font-weight:900;
+}
+
+
+body{background:radial-gradient(900px 340px at 20% 0%, rgba(211,47,47,.10), transparent 60%),radial-gradient(700px 280px at 100% 30%, rgba(183,28,28,.08), transparent 60%),#f6f7f9;}
+</style>
+</head>
+<body> <div class="wrap"> <span class="badge">Fiyatlara KDV Dahildir</span> <div class="grid" style="margin-top:12px"> <div class="card"> <h2>Hızlı Kurallar</h2> <ul> <li><b>Minimum kiralama:</b> 30 dk (30 dk altı kullanımlarda da 30 dk ücreti alınır).</li> <li><b>30 dk sonrası:</b> Süre 5 dakikalık dilimlere göre hesaplanır ve her zaman bir üst 5 dakikaya tamamlanır (örn. 37 dk → 40 dk).</li> <li><b>Park dışına çıkamaz.</b> Kimlik teminat olarak alınır ve araç tesliminde iade edilir.</li> </ul> </div> <div class="card"> <h2>Hızlı Hesap (Dakika Gir)</h2> <div class="calc"> <div class="calc-row"> <div> <div class="kicker">Araç Türü</div> <select id="type"> <option value="tekli">Tekli</option> <option value="prof">Prof Tekli</option> <option value="carting">Carting</option> <option value="tandem">Tandem</option> <option value="sepetli">Sepetli</option> <option value="iki">2'li Araba</option> <option value="dort">4'lü Araba</option> <option value="elek2">Elektrikli 2'li</option> <option value="elek4">Elektrikli 4'lü</option> </select> </div> <div> <div class="kicker">Kullanım Süresi (dk)</div> <input id="min" type="number" inputmode="numeric" min="1" placeholder="Örn. 37" /> </div> </div> <div class="result"> <div class="kicker">Ücret</div> <div><b id="fee">—</b></div> <div class="kicker" style="margin-top:6px">Hesaplanan süre: <span class="pill" id="rounded">—</span></div> </div> <div class="note">Yuvarlama: 30–36=30 • 37–42=40 • 43–47=45 • 48–52=50 • 53–57=55 • 58–62=60 • 62+ = 5 dk dilim (±2 dk tolerans).</div> </div> <hr style="border:none;border-top:1px solid var(--line);margin:12px 0"/> <div class="note"> <b>60 dk (1 saat):</b> Tekli 180 • Prof 300 • Carting 240 • Tandem 300 • Sepetli 240 • 2'li 360 • 4'lü 500 • E2 1200 • E4 1800<br/> <b>60 dk sonrası</b> (her +5 dk): Tekli +15 • Prof +25 • Carting +20 • Tandem +25 • Sepetli +20 • 2'li +30 • 4'lü +42 • E2 +100 • E4 +150 </div> </div> </div> <div class="card" style="margin-top:12px"> <h2>30–60 Dakika Ücret Tablosu (5 dk dilim)</h2> <div class="table-wrap"> <div class="scroll sticky"> <table class="tarife"> <thead> <tr> <th>Araç</th> <th>30 dk</th><th>40 dk</th><th>45 dk</th><th>50 dk</th><th>55 dk</th><th>60 dk</th> <th>+5 dk</th> </tr> </thead> <tbody> <tr><td><b>Tekli</b></td><td>90 TL</td><td>120 TL</td><td>135 TL</td><td>150 TL</td><td>165 TL</td><td>180 TL</td><td>15 TL</td></tr> <tr><td><b>Prof Tekli</b></td><td>150 TL</td><td>200 TL</td><td>225 TL</td><td>250 TL</td><td>275 TL</td><td>300 TL</td><td>25 TL</td></tr> <tr><td><b>Carting</b></td><td>120 TL</td><td>160 TL</td><td>180 TL</td><td>200 TL</td><td>220 TL</td><td>240 TL</td><td>20 TL</td></tr> <tr><td><b>Tandem</b></td><td>150 TL</td><td>200 TL</td><td>225 TL</td><td>250 TL</td><td>275 TL</td><td>300 TL</td><td>25 TL</td></tr> <tr><td><b>Sepetli</b></td><td>120 TL</td><td>160 TL</td><td>180 TL</td><td>200 TL</td><td>220 TL</td><td>240 TL</td><td>20 TL</td></tr> <tr><td><b>2'li Araba</b></td><td>180 TL</td><td>240 TL</td><td>270 TL</td><td>300 TL</td><td>330 TL</td><td>360 TL</td><td>30 TL</td></tr> <tr><td><b>4'lü Araba</b></td><td>250 TL</td><td>333 TL</td><td>375 TL</td><td>417 TL</td><td>459 TL</td><td>500 TL</td><td>42 TL</td></tr> <tr><td><b>Elek. 2'li</b></td><td>600 TL</td><td>800 TL</td><td>900 TL</td><td>1000 TL</td><td>1100 TL</td><td>1200 TL</td><td>100 TL</td></tr> <tr><td><b>Elek. 4'lü</b></td><td>900 TL</td><td>1200 TL</td><td>1350 TL</td><td>1500 TL</td><td>1650 TL</td><td>1800 TL</td><td>150 TL</td></tr> </tbody>
+</table> </div> </div> <p class="note" style="margin:10px 0 0"> Not: 60 dk üzeri için, her araç türünde <b>her 5 dk</b> yukarıdaki ek ücretler uygulanır ve süre <b>bir üst 5 dk’ya</b> tamamlanır. </p> </div> <div class="card" style="margin-top:12px"> <h2>KVKK Bilgilendirme & Açık Rıza</h2> <details open> <summary>Türkçe</summary> <div class="kvkk"> <p><b>KVKK BİLGİLENDİRMESİ VE AÇIK RIZA METNİ</b></p> <p> Bisiklet kiralama işlemi sırasında, kimlik belgeniz (örnek: nüfus cüzdanı, ehliyet, pasaport, iş yeri kimlik kartı) geçici olarak saklanabilir ve kişisel verileriniz (ad, soyad vb.) kaydedilebilir. </p> <p>Bu işlem yalnızca:</p> <p>✔️ Kiralama hizmetinin yürütülmesi,<br/> ✔️ Teslimatın ve iadenin takibi,<br/> ✔️ Kayıp veya zarar durumlarında tarafların tespiti,<br/> ✔️ Gerekli durumlarda iletişime geçirebilmesi amaçıyla ve açık rızanıza dayanarak yapılmaktadır. </p> <p> Verileriniz, yasal gereklilikler dışında üçüncü kişilerle paylaşılmaz. Kiralama sona erdiğinde kimlik belgeniz iade edilir, verileriniz silinir. Kimlik bilgileri yalnızca gerekli süre boyunca güvenli ortamlarda saklanır. </p> <p> Bu işlemi kabul ederek, kişisel verilerinizin yukarıdaki amaçlarla işlenmesine açık rıza verdiğinizi beyan etmiş olursunuz. </p> </div> </details> <details> <summary>English</summary> <div class="kvkk"> <p><b>KVKK INFORMATION AND EXPLICIT CONSENT NOTICE</b></p> <p> During the bicycle rental process, your ID document (e.g., national ID, driver’s license, passport, company ID card) may be temporarily held, and your personal data (e.g., name, surname) may be recorded. </p> <p>This data is processed solely for the purposes of:</p> <p>✔️ Providing rental services,<br/> ✔️ Tracking the delivery and return,<br/> ✔️ Identifying parties in case of loss or damage,<br/> ✔️ Contacting when necessary. </p> <p> Your data is processed based on your explicit consent. It will not be shared with third parties except as required by law. Your ID document will be returned after the rental, and your data will be deleted. Personal data is stored only as long as necessary and in secure environments. </p> <p> By proceeding, you confirm that you have read and voluntarily consent to the processing of your personal data as described. </p> </div> </details> <details> <summary>العربية</summary> <div class="kvkk rtl"> <p><b>إشعار معلومات قانون حماية البيانات الشخصية والموافقة الصريحة</b></p> <p> أثناء عملية تأجير الدراجات، قد يتم الاحتفاظ مؤقتًا بوثيقة هويتك (مثل: بطاقة الهوية، رخصة القيادة، جواز السفر، بطاقة هوية العمل)، وقد يتم تسجيل بياناتك الشخصية (مثل الاسم، اللقب). </p> <p>يتم استخدام هذه البيانات فقط من أجل:</p> <p>✔️ تنفيذ خدمة التأجير،<br/> ✔️ متابعة التسليم والإرجاع،<br/> ✔️ تحديد الأطراف في حالة الفقد أو الضرر،<br/> ✔️ التواصل عند الحاجة. </p> <p> تتم معالجة بياناتك بموافقتك الصريحة. لن تتم مشاركتها مع أي طرف ثالث إلا إذا تطلب القانون ذلك. سيتم إعادة وثيقة هويتك بعد انتهاء مدة التأجير وسيتم حذف بياناتك. تُخزن البيانات الشخصية فقط للمدة اللازمة وفي بيئات آمنة. </p> <p> بالمتابعة، فإنك تقر بأنك قرأت المعلومات وتوافق طوعًا على معالجة بياناتك الشخصية. </p> </div> </details> </div> <footer>Hasbahçe Kafe & Bisiklet Kiralama</footer> </div> <script>
+(() => {
+  const FEE_TABLE = {
+    tekli:{30:90,40:120,45:135,50:150,55:165,60:180},
+    prof:{30:150,40:200,45:225,50:250,55:275,60:300},
+    carting:{30:120,40:160,45:180,50:200,55:220,60:240},
+    tandem:{30:150,40:200,45:225,50:250,55:275,60:300},
+    sepetli:{30:120,40:160,45:180,50:200,55:220,60:240},
+    iki:{30:180,40:240,45:270,50:300,55:330,60:360},
+    dort:{30:250,40:333,45:375,50:417,55:459,60:500},
+    elek2:{30:600,40:800,45:900,50:1000,55:1100,60:1200},
+    elek4:{30:900,40:1200,45:1350,50:1500,55:1650,60:1800}
+  };
+
+  const PER5_AFTER_60 = {tekli:15,prof:25,carting:20,tandem:25,sepetli:20,iki:30,dort:42,elek2:100,elek4:150};
+
+  function roundedBucket(mins){
+    if(!Number.isFinite(mins) || mins<=0) return null;
+    if(mins<=36) return 30;
+    if(mins<=42) return 40;
+    if(mins<=47) return 45;
+    if(mins<=52) return 50;
+    if(mins<=57) return 55;
+    if(mins<=62) return 60;
+    let b = Math.round(mins/5)*5; // ±2 dk tolerans
+    if(b<65) b=65;
+    return b;
+  }
+
+  function bucketPretty(b){
+    if(!b) return "—";
+    if(b<60) return b+" dk";
+    if(b===60) return "1 sa";
+    const h=Math.floor(b/60), m=b%60;
+    return h+" sa "+String(m).padStart(2,"0")+" dk";
+  }
+
+  function fee(type, mins){
+    const b = roundedBucket(mins);
+    if(!b) return null;
+    if(b<=60){
+      const ft = FEE_TABLE[type];
+      return ft ? (ft[b] ?? null) : null;
+    }
+    const base = (FEE_TABLE[type] && FEE_TABLE[type][60]) ? FEE_TABLE[type][60] : 0;
+    const per5 = PER5_AFTER_60[type] || 0;
+    return base + ((b-60)/5)*per5;
+  }
+
+  function update(){
+    const typeEl = document.getElementById("type");
+    const minEl  = document.getElementById("min");
+    const rEl    = document.getElementById("rounded");
+    const fEl    = document.getElementById("fee");
+    if(!typeEl || !minEl || !rEl || !fEl) return;
+
+    const type = typeEl.value;
+    const min = parseInt(minEl.value, 10);
+
+    const b = roundedBucket(min);
+    const f = fee(type, min);
+
+    rEl.textContent = b ? bucketPretty(b) : "—";
+    fEl.textContent = (f==null) ? "—" : (f + " TL");
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const typeEl = document.getElementById("type");
+    const minEl  = document.getElementById("min");
+    if(typeEl) typeEl.addEventListener("change", update);
+    if(minEl)  minEl.addEventListener("input", update);
+    update();
+  });
+})();
+</script>
+</body>
+</html> 
